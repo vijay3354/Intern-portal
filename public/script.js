@@ -10,7 +10,6 @@ function login() {
         })
         .then(data => {
           sessionStorage.setItem("internName", data.internName);
-          internName.value="";
           window.location.href = "dashboard.html";
         })
         .catch(err => alert(err.message));
@@ -39,8 +38,6 @@ function login() {
       .then(data => {
         // Store internName in sessionStorage 
         sessionStorage.setItem("internName", data.internName);
-        internName.value="";
-        referralCode.value="";
         window.location.href = "dashboard.html";
       })
       .catch(err => alert(err.message));
@@ -49,11 +46,6 @@ function login() {
 
 //Dashboard Script
 const internName = sessionStorage.getItem("internName");
-    if (!internName) {
-      alert("You must login first");
-      window.location.href = "index.html";
-    }
-
     // Load intern details
     fetch(`http://localhost:3000/api/interns/${internName}`)
       .then(res => res.json())
