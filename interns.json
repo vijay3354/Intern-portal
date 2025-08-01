@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "internName": "vijay gaud",
+    "referralCode": "vijay2025",
+    "amountRaised": 11677
+  },
+  {
+    "id": 2,
+    "internName": "ajay",
+    "referralCode": "vijay2025",
+    "amountRaised": 3527
+  },
+
+  {
+    "id": 4,
+    "internName": "sager",
+    "referralCode": "vijay2025",
+    "amountRaised": 4384
+  },
+  {
+    "id": 5,
+    "internName": "sujal",
+    "referralCode": "vijay2025",
+    "amountRaised": 5875
+  }
+]

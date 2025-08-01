@@ -1,0 +1,48 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f0f0;
+  padding: 30px;
+}
+.container {
+  max-width: 500px;
+  margin: auto;
+  background: rgb(214, 176, 176);
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 30px #e73030;
+}
+input,button{
+  width: 90%;
+  padding: 10px;
+  margin: 10px 10px 10px 0;
+  border-radius: 6px;
+  
+}
+.rewards ul {
+  list-style: none;
+  padding: 0;
+}
+.rewards li {
+  background: #8eb686;
+  margin: 5px 0;
+  padding: 8px;
+  border-radius: 5px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+table, th, td {
+  border: 1px solid #ccc;
+}
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+thead {
+  background-color: #f4f4f4;
+}
+.container:hover{
+  transform: scale(1.05);
+}

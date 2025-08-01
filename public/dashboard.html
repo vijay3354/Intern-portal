@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome, <span id="internName"></span></h1>
+    <p>Referral Code: <strong id="referralCode"></strong></p>
+    <p>Total Donations Raised: ₹<span id="donationAmount"></span></p>
+
+    <div class="rewards">
+      <h3>Rewards</h3>
+      <ul>
+        <li>🎁 Free Swag</li>
+        <li>📜 Certificate</li>
+        <li>🚀 Recognition</li>
+      </ul>
+    </div>
+
+<div class="leaderboard">
+  <h3>🏆 Top 3 Interns Leaderboard</h3>
+  <table id="leaderboardTable">
+    <thead>
+      <tr>
+        <th>Rank</th>
+        <th>Intern Name</th>
+        <th>Referral Code</th>
+        <th>Amount Raised (₹)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Leaderboard rows will be inserted here -->
+    </tbody>
+  </table>
+</div>
+    
+
+  <script src="script.js"></script>
+</body>
+</html>
