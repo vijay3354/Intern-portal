@@ -3,7 +3,7 @@ function login() {
       const code = document.getElementById('internName').value.trim();
       if (!code) return alert("Enter your name");
 
-      fetch(`http://localhost:3000/api/interns/${code}`)
+      fetch(`https://intern-portal-nt46.onrender.com/api/interns/${code}`)
         .then(res => {
           if (!res.ok) throw new Error("Intern not found");
           return res.json();
@@ -26,7 +26,7 @@ function login() {
         return;
       }
 
-      fetch("http://localhost:3000/api/interns", {
+      fetch("https://intern-portal-nt46.onrender.com/api/interns", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ internName, referralCode })
@@ -47,7 +47,7 @@ function login() {
 //Dashboard Script
 const internName = sessionStorage.getItem("internName");
     // Load intern details
-    fetch(`http://localhost:3000/api/interns/${internName}`)
+    fetch(`https://intern-portal-nt46.onrender.com/api/interns/${internName}`)
       .then(res => res.json())
       .then(data => {
         document.getElementById("internName").textContent = data.internName;
@@ -56,7 +56,7 @@ const internName = sessionStorage.getItem("internName");
       });
 
     // Load leaderboard
-   fetch('http://localhost:3000/api/interns/top')
+   fetch('https://intern-portal-nt46.onrender.com/api/interns/top')
   .then(res => res.json())
   .then(data => {
     const tbody = document.querySelector("#leaderboardTable tbody");
@@ -74,3 +74,4 @@ const internName = sessionStorage.getItem("internName");
   });
   
 //end Dashboard Script
+
